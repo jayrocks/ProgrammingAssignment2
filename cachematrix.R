@@ -46,7 +46,7 @@ cacheSolve <- function(x, ...) {
   }
   
   data <- x$get()
-  m <- solve(data, ...)
+  m <- solve(data, ...) ## Here the Solve function is used for finding the Inverse Matrix of matrix x......
   x$setMatrix(m)
   m
 }
